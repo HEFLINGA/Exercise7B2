@@ -12,6 +12,7 @@ namespace MilitaryUnit
         {
             AssaultRifle AR15 = new AssaultRifle();
             Infantry infantry1 = new Infantry();
+            Jet F16 = new Jet();
         }
     }
 }

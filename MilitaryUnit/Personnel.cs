@@ -8,6 +8,8 @@ namespace MilitaryUnit
 {
     class Personnel
     {
+        public string name;
+
         public void Armor(string typeOfArmorWorn, string typeOfSoldier)
         {
             Console.WriteLine($"Your {typeOfSoldier} is wearing {typeOfArmorWorn}");
