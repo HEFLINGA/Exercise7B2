@@ -17,5 +17,10 @@ namespace MilitaryUnit
         {
             Console.WriteLine($"Weapon made a loud {noiseOfWeaponJammed}.. Weapon must be jammed!");
         }
+
+        public void WeaponReload(string noiseOfReload)
+        {
+            Console.WriteLine($"RELOADING!! {noiseOfReload}");
+        }
     }
 }
