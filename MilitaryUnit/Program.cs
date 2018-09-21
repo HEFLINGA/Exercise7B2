@@ -68,6 +68,7 @@ namespace MilitaryUnit
                         AR15.ARType("AR-15");
                         AR15.ExtendedMag();
                         AR15.MuzzleBreak();
+                        infantry1.Armor("Flak Jacket", "Infantry");
                         Console.WriteLine("Press enter to continue to the fight:");
                         Console.ReadLine();
                         Console.Clear();
