@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace MilitaryUnit
 {
-    class Pilot
+    class Pilot : Personnel
     {
+        public Pilot(string name)
+        {
+            this.name = name;
+        }
+
         public void Fly(string planeOrHelicoptor)
         {
             Console.WriteLine($"Pilot Flies the {planeOrHelicoptor}");

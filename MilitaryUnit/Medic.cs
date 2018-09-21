@@ -8,6 +8,11 @@ namespace MilitaryUnit
 {
     class Medic : Personnel
     {
+        public Medic(string name)
+        {
+            this.name = name;
+        }
+
         public void Surgery()
         {
             Console.WriteLine("Medics perform surgery..");

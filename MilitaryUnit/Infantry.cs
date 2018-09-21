@@ -8,6 +8,11 @@ namespace MilitaryUnit
 {
     class Infantry : Personnel
     {
+        public Infantry(string name)
+        {
+            this.name = name;
+        }
+
         public void Assault()
         {
             Console.WriteLine("The infantry moved on the assault!");
