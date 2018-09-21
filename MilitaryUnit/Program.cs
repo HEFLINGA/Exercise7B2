@@ -38,7 +38,64 @@ namespace MilitaryUnit
             Console.ReadLine();
             Console.Clear();
 
+            bool game = true;
+            int input = 0;
 
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Choose a mission: ");
+                Console.WriteLine("1. Assault");
+                Console.WriteLine("2. Defend");
+                Console.WriteLine("3. Exit");
+
+                input = int.Parse(Console.ReadLine());
+                switch (input)
+                {
+                    case 1:
+                        raid.TaskingType();
+                        Console.WriteLine("Choose your Weapon!");
+                        Console.WriteLine("1. AR-15");
+                        Console.WriteLine("2. RPG");
+                        Console.WriteLine("3. Exit");
+
+                        input = int.Parse(Console.ReadLine());
+                        if (input == 1)
+                        {
+                            AR15.ARType("AR-15");
+                            AR15.ExtendedMag();
+                            AR15.MuzzleBreak();
+                            Console.WriteLine("Press enter to continue to the fight:");
+                            Console.ReadLine();
+                        }
+                        else if (input == 2)
+                        {
+                            RPG.RocketLauncherType("RPG");
+                            RPG.ExplosionSize();
+                            Console.WriteLine("Press enter to continue to the fight:");
+                            Console.ReadLine();
+                        }
+                        else if (input == 3)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("No weapon? Well then no mission. Get outa hereee");
+                        }
+                        break;
+                    case 2:
+                        convoy.TaskingType();
+                        break;
+                    case 3:
+                        game = false;
+                        break;
+                    default:
+                        Console.WriteLine("Choose a different input: ");
+                        break;
+                }                    
+
+            } while (game == true);            
         }
     }
 }

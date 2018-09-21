@@ -10,7 +10,7 @@ namespace MilitaryUnit
     {
         public override void TaskingType()
         {
-            Console.WriteLine("You are tasked with Raiding a supply line for the enemy.");
+            Console.WriteLine("You are tasked with Raiding an enemy supply line.");
         }
     }
 }
