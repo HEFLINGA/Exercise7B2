@@ -17,5 +17,10 @@ namespace MilitaryUnit
         {
             Console.WriteLine("Explosion Radius: 100m");
         }
+
+        public override void FireWeapon()
+        {
+            Console.WriteLine("Rocket Launcher fired");
+        }
     }
 }

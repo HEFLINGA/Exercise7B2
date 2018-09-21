@@ -8,9 +8,9 @@ namespace MilitaryUnit
 {
     class Weapon
     {
-        public void FireWeapon(string noiseOfWeaponFired)
+        public virtual void FireWeapon()
         {
-            Console.WriteLine($"Weapon went {noiseOfWeaponFired}");
+            Console.WriteLine($"Weapon Fired");
         }
 
         public void WeaponJammed(string noiseOfWeaponJammed)
@@ -18,9 +18,9 @@ namespace MilitaryUnit
             Console.WriteLine($"Weapon made a loud {noiseOfWeaponJammed}.. Weapon must be jammed!");
         }
 
-        public void WeaponReload(string noiseOfReload)
+        public void WeaponReload()
         {
-            Console.WriteLine($"RELOADING!! {noiseOfReload}");
+            Console.WriteLine($"RELOADING!!");
         }
     }
 }

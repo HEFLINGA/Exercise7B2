@@ -22,5 +22,10 @@ namespace MilitaryUnit
         {
             Console.WriteLine("This weapon has a muzzle break!");
         }
+
+        public override void FireWeapon()
+        {
+            Console.WriteLine("Fired the assault rifle!");
+        }
     }
 }
