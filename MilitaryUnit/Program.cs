@@ -10,7 +10,8 @@ namespace MilitaryUnit
     {
         static void Main(string[] args)
         {
-
+            AssaultRifle AR15 = new AssaultRifle();
+            Infantry infantry1 = new Infantry();
         }
     }
 }

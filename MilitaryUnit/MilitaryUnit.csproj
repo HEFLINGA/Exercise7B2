@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssaultRifle.cs" />
+    <Compile Include="Infantry.cs" />
+    <Compile Include="Medic.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

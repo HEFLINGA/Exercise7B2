@@ -12,10 +12,21 @@ namespace MilitaryUnit
         {
             Console.WriteLine($"Your {typeOfSoldier} is wearing {typeOfArmorWorn}");
         }
-
-        public void PersonnelType(string typeOfSoldier)
+        
+        public void Gender(string input)
         {
-            Console.WriteLine($"This Personnel is a {typeOfSoldier}");
+            if (input == "m")
+            {
+                Console.WriteLine("Male Soldier");
+            }
+            else if(input == "f")
+            {
+                Console.WriteLine("Female Soldier");
+            }
+            else
+            {
+                Console.WriteLine("There are but 2 genders.. m, or f..");
+            }
         }
     }
 }
