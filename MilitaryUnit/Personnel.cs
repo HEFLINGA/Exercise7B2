@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace MilitaryUnit
 {
-    class Program
+    class Personnel
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
