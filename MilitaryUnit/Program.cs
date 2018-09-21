@@ -51,7 +51,7 @@ namespace MilitaryUnit
             bool game = true;
             int input = 0;
 
-            // "Game" loop. Didn't make seperate menu classes since the focus was how the inheretence worked. (A little cluttered, but it runs)
+            // Game loop. Didn't make seperate menu classes since the focus was how the inheretence worked. (A little cluttered, but it runs)
             do
             {
                 Console.Clear();
