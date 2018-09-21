@@ -8,5 +8,9 @@ namespace MilitaryUnit
 {
     class Raid : Assault
     {
+        public override void TaskingType()
+        {
+            Console.WriteLine("You are tasked with Raiding a supply line for the enemy.");
+        }
     }
 }

@@ -8,14 +8,16 @@ namespace MilitaryUnit
 {
     class Tasking
     {
-        public void TaskingType(string mission)
-        {
-            Console.WriteLine($"Your task is {mission}");
-        }
-
         public void TaskingTime(int time)
         {
             Console.WriteLine($"This task will take you {time}");
         }
+
+
+        public virtual void TaskingType()
+        {
+            Console.WriteLine("You have a task");
+        }
+
     }
 }

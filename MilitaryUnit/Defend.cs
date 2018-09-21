@@ -8,5 +8,9 @@ namespace MilitaryUnit
 {
     class Defend : Tasking
     {
+        public override void TaskingType()
+        {
+            Console.WriteLine("Your task is Defence Mission");
+        }
     }
 }
